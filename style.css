@@ -1,0 +1,41 @@
+body{
+    overflow: hidden;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    font-size: 50px;
+    text-align: center;
+}
+.gallery{
+    display: flex;
+    height: 80%;
+    width: 80%;
+    margin: 2% auto 0;
+    box-sizing: border-box;
+    
+}
+.image-box{
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+}
+.image-box img{
+    width: 80%;
+    height: 150%;
+    object-fit: cover;
+    transition: .5s;
+}
+.image-box:hover{
+    flex-basis: 50%;
+}
+.action{
+    flex-basis: 50%;
+}
+.gallery:hover .action{
+    flex-basis: 0;
+}
+.image-box:nth-child(1):hover{
+    flex-basis: 50%;
+}
